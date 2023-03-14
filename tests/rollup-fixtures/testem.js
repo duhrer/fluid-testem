@@ -6,7 +6,7 @@ fluid.logObjectRenderChars = 200000;
 
 fluid.require("%fluid-testem");
 
-var testemComponent = fluid.testem.instrumentation({
+var testemComponent = fluid.testem({
     cwd:         __dirname, // required because we are working outside of our package root.
     testPages:   ["rollup.html"],
     sourceDirs: {
